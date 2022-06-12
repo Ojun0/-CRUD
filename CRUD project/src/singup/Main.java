@@ -32,7 +32,19 @@ public class Main {
 						System.out.println("회원가입이 되었습니다");
 						break;
 					
-					case 2: //회원탈퇴	
+					case 2: //회원탈퇴
+						System.out.println();
+						System.out.println("탈퇴할 회원에 이름을 입력하세요.");
+						System.out.println("========================");
+						System.out.println("이름:");
+						name = sc.next();
+						for (int i= 0; i < users.size(); i++) {
+							if (name.equals(users.get(i).getName())) {
+								users.remove(i);
+								System.out.println("삭제되었습니다!");
+							}else
+								System.out.println("회원이 존재하지 않습니다.");
+						}
 						break;
 					
 					case 3: //회원리스트
