@@ -99,10 +99,12 @@ public class Main {
 							if (name.equals(users.get(i).getName())) {
 								System.out.println("찾으시는 회원이 있습니다.");
 								System.out.println(name);
-							} else {
+							} 
+							else {
 								System.out.println("찾으시는 회원이 존재하지 않습니다.");
 							}
 						}
+						break;
 						
 					case 6: //종료
 						flag = false;
