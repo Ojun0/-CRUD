@@ -58,6 +58,6 @@ public class user {
 	}
 	
 	public String toString( ) {
-		return "----------- \n 회원 이름:" + name  + "\n 아이디 :" + id + "\n 비밀번호" + pw + " 이메일:" + email + "나이:" + age +"\n ------------";
+		return "----------- \n 회원 이름:" + name  + "\n 아이디 :" + id + "비밀번호" + pw + "\n 이메일:" + email + " 나이:" + age +"\n ------------";
 	}
 }
