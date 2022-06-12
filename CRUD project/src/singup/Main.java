@@ -57,8 +57,41 @@ public class Main {
 							System.out.println(user);
 						break;
 					case 4: //회원 정보 수정
+						System.out.println();
+						System.out.print("수정할 고객의 이름을 입력하세요.");
+						name = sc.next();
+						for (int i = 0; i < users.size(); i++) {
+							if (name.equals(users.get(i).getName())) {
+
+								System.out.print("수정하실 항목을 선택하세요. (1)이름     (2)나이     (3)이메일");
+								n = sc.nextInt();
+								System.out.println();
+
+								switch (n) {
+								case 1:
+									System.out.print("이름을 새로 입력하세요.");
+									name = sc.next();
+									users.get(i).setName(name);
+									break;
+								case 2:
+									System.out.print("나이를 새로 입력하세요.");
+									age = sc.next();
+									users.get(i).setAge(age);
+									break;
+								case 3:
+									System.out.print("이메일를 새로 입력하세요.");
+									email = sc.next();
+									users.get(i).setEmail(email);
+									break;
+								}
+								System.out.println("수정되었습니다!");
+
+							} else
+								System.out.println("잘못된 정보입니다.");
+						}
+
 						break;
-						
+
 					case 5: //종료
 						flag = false;
 						System.out.println("시스템이 종료되었습니다.");
