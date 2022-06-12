@@ -41,19 +41,19 @@ public class user {
 	}
 	
 	public String getEmail() {
-		this.email = email;
-	}
-	
-	public void setEmail(String email) {
 		return email;
 	}
 	
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
 	public String getAge() {
-		this.age = age;
+		return age;
 	}
 	
 	public void setAge(String age) {
-		return age;
+		this.age = age;
 	}
 	
 	public String toString( ) {
