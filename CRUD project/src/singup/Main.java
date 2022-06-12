@@ -38,7 +38,7 @@ public class Main {
 					
 					case 2: //회원탈퇴
 						System.out.println();
-						System.out.println("탈퇴할 회원에 이름을 입력하세요.");
+						System.out.println("탈퇴할 회원의 이름을 입력하세요.");
 						System.out.println("========================");
 						System.out.println("이름:");
 						name = sc.next();
@@ -52,8 +52,10 @@ public class Main {
 						break;
 					
 					case 3: //회원리스트
+						System.out.println();
+						for (User user : users)
+							System.out.println(user);
 						break;
-					
 					case 4: //회원 정보 수정
 						break;
 						
