@@ -53,7 +53,7 @@ public class Main {
 					
 					case 3: //회원리스트
 						System.out.println();
-						for (User user : users)
+						for (user user : users)
 							System.out.println(user);
 						break;
 					case 4: //회원 정보 수정
