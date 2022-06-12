@@ -26,9 +26,13 @@ public class Main {
 						String name =sc.next();
 						System.out.println("아이디:");
 						String id = sc.next();
-						System.out.println("비밀번호 :");
+						System.out.println("비밀번호:");
 						String pw = sc.next();
-						users.add(new user(name, id, pw));
+						String.out.pringln("이메일:");
+						String email = sc.next();
+						String.out.println("나이:");
+						String age = sc.next();
+						users.add(new user(name, id, pw, email, age));
 						System.out.println("회원가입이 되었습니다");
 						break;
 					
