@@ -12,7 +12,7 @@ public class Main {
 			Boolean flag = true;
 			while (flag) {
 				System.out.println("-------------------------------------------------");
-				System.out.println("1. 회원가입 2.회원탈퇴 3.회원리스트 4.회원 정보 수정 5.종료");
+				System.out.println("1. 회원가입 2.회원탈퇴 3.회원리스트 4.회원 정보 수정 5.회원 검색 6.종료");
 				System.out.println("-------------------------------------------------");
 				System.out.println("실행하실 메뉴의 번호를 입력해주세요:");
 				n= sc.nextInt();
@@ -91,14 +91,26 @@ public class Main {
 						}
 
 						break;
-
-					case 5: //종료
+						
+					case 5://회원 검색
+						System.out.println("검색할 이름:");
+						name = sc.next();
+						for (int i = 0; i < users.size(); i++) {
+							if (name.equals(users.get(i).getName())) {
+								System.out.println("찾으시는 회원이 있습니다.");
+								System.out.println(name);
+							} else {
+								System.out.println("찾으시는 회원이 존재하지 않습니다.");
+							}
+						}
+						
+					case 6: //종료
 						flag = false;
 						System.out.println("시스템이 종료되었습니다.");
 						break;
 					
 					default:
-						System.out.println("1~5 사이에 숫자만 입력해주세요.");
+						System.out.println("1~6 사이에 숫자만 입력해주세요.");
 						break;
 				}
 			}
